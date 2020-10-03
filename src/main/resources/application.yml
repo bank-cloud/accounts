@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: production
+  jpa:
+    show-sql: true
+    database: mysql
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:mysql://localhost:3306/accounts?serverTimezone=Europe/Warsaw
+    username: root
+    password: procitip
