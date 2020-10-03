@@ -1,4 +1,4 @@
-package com.kodilla.accounts.controller.response;
+package com.kodilla.accounts.rest.response;
 
 import com.kodilla.accounts.dto.AccountDto;
 import lombok.AllArgsConstructor;
@@ -8,10 +8,9 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Data
-@AllArgsConstructor(staticName = "of")
 @NoArgsConstructor
-public class GetAccountsResponse {
+@AllArgsConstructor(staticName = "of")
+public class GetCustomerAccountsResponse {
 
     private List<AccountDto> accounts;
-
 }

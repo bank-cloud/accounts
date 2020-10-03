@@ -1,29 +1,28 @@
-package com.kodilla.accounts.entity;
+package com.kodilla.accounts.domain;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
-@Table
 @Entity
+@Table
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class Account {
+
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String nrb;
-    private String currency;
+    private String name;
+
     private BigDecimal availableFunds;
+
+    private Currency currency;
+
     private Long customerId;
 }

@@ -1,5 +1,6 @@
 package com.kodilla.accounts.dto;
 
+import com.kodilla.accounts.domain.Currency;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,12 +9,15 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Builder
 public class AccountDto {
-    private long id;
-    private String nrb;
-    private String currency;
+    private Long id;
+
+    private String name;
+
     private BigDecimal availableFunds;
+
+    private Currency currency;
+
+    private Long customerId;
 }

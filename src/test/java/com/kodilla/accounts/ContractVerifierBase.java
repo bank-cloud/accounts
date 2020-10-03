@@ -1,6 +1,6 @@
 package com.kodilla.accounts;
 
-import com.kodilla.accounts.entity.Account;
+import com.kodilla.accounts.domain.Account;
 import com.kodilla.accounts.repository.AccountRepository;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import org.junit.Ignore;
